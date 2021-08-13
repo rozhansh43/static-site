@@ -38,6 +38,7 @@
 
     <b-container>
       <b-col>
+
         <img src="@/assets/Layer 1.png" />
       </b-col>
 
@@ -122,6 +123,24 @@
 
     <b-container>
       <b-row>
+        <b-col>
+          <b-card border-variant="info" header="Info" align="center">
+            <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
+          </b-card>
+        </b-col>
+
+        <b-col>
+          <b-card border-variant="info" header="Info" align="center">
+            <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
+          </b-card>
+        </b-col>
+
+        <b-col>
+          <b-card border-variant="info" header="Info" align="center">
+            <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
+          </b-card>
+        </b-col>
+        
         <b-col>
           <b-card border-variant="info" header="Info" align="center">
             <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
