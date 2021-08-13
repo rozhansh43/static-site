@@ -140,9 +140,10 @@
             <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
           </b-card>
         </b-col>
-        
+
         <b-col>
           <b-card border-variant="info" header="Info" align="center">
+            <img src="@/assets/photo-camera.png" alt="">
             <b-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</b-card-text>
           </b-card>
         </b-col>
@@ -194,7 +195,7 @@ body {
 }
 
 .portfolio-box .portfolio-info{
-  background-color: #47c9e5;
+  background-color: linear-gradient(45deg, rgba(71,201,229,0.9) 0%, rgba(102,252,233,0.9) 100%);
   opacity: 0;
   position: absolute;
   top: 0;
