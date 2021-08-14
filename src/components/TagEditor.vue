@@ -44,6 +44,8 @@
 
       <b-col>
         hhh
+        <img src="@/assets/blue-watercolor-texture-with-copyspace-right.jpg" />
+
       </b-col>
     </b-container>
 
@@ -149,6 +151,70 @@
         </b-col>
       </b-row>
     </b-container>
+
+    <div class="container">
+        <div class="row">
+
+            <div id="carousel-example-generic" class="carousel slide carousel-fade carousel-animate carousel-bg" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active" style="background-image: url(https://unsplash.it/1240/530?image=697);">
+                        <div class="carousel-caption">
+                           <div class="hero">
+                                <hgroup class="zoomInDown animated">
+                                    <h1 class="fadeInLeft animated">One</h1>
+                                    <h3 class="slideInRight animated">Get start your next awesome project</h3>
+                                </hgroup>
+                                <button class="btn btn-hero btn-lg bounceInUp animated" role="button">See all features</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(https://unsplash.it/1240/530?image=545);">
+                        <div class="carousel-caption">
+                            <div class="hero fadeInUp animated">
+                                <hgroup>
+                                    <h1>Two</h1>
+                                    <h3>Get start your next awesome project</h3>
+                                </hgroup>
+                                <button class="btn btn-hero btn-lg zoomIn animated" role="button">See all features</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(https://unsplash.it/1240/530?image=673);">
+                        <div class="carousel-caption">
+                            <div class="hero rollIn animated">
+                                <hgroup class="rotateInDownRight animated">
+                                    <h1>Three</h1>
+                                    <h3>Get start your next awesome project</h3>
+                                </hgroup>
+                                <button class="btn btn-hero btn-lg" role="button">See all features</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <section class="details">
+                <h1>Animation in Bootstrap Slider</h1>
+                <br>
+            </section>
+        </div>
+    </div>
   </div>
 </template>
 
@@ -180,7 +246,7 @@ export default {
 
 <style>
 body {
-  background-color: #b0b6bd!important;
+  background-color: #ebecec!important;
 }
 .portfolio-box {
   position: relative;
@@ -271,6 +337,88 @@ body {
   border-radius: 50%;
   height:200px;
   vertical-align: middle;
+}
+/*
+Animate Bootstrap Carousel
+Element by thecodeblock.com
+*/
+/********************************/
+/*       Coloring indicators    */
+/********************************/
+.carousel-animate .carousel-indicators > li {
+  margin: 0 2px;
+  background-color: #f39c12;
+  border-color: #f39c12;
+  opacity: 0.7;
+}
+.carousel-animate .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+/********************************/
+/*          Hero Headers        */
+/********************************/
+.carousel-animate .hero {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.75);
+}
+/********************************/
+/*          Custom Buttons      */
+/********************************/
+.btn.btn-lg {
+  padding: 10px 40px;
+}
+.btn.btn-hero,
+.btn.btn-hero:hover,
+.btn.btn-hero:focus {
+  color: #f5f5f5;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+  outline: none;
+  margin: 20px auto;
+}
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (max-width: 640px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+}
+/********************************/
+/*          Fade Effect         */
+/********************************/
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+/************************************/
+/*       BS bacground Images       */
+/**********************************/
+.carousel-bg .carousel-inner .item {
+  background-color: darkslategrey;
+  background-size: cover;
+  background-position: center;
+  min-height: 480px;
 }
 
 </style>
